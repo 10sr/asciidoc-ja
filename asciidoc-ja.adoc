@@ -542,12 +542,11 @@ multi-part book.
 
 Block Elements
 ~~~~~~~~~~~~~~
-Block elements consist of one or more lines of text and may contain
-other block elements.
+ブロック要素 (Block elements) は、一行以上のテキストで構成され、またその他の
+ブロック要素を含む場合もあります。
 
-The AsciiDoc block structure can be informally summarized as follows
-footnote:[This is a rough structural guide, not a rigorous syntax
-definition]:
+AsciiDoc のブロック構造は、おおよそ以下のようにまとめられます。
+footnote:[これは概要であり、厳格なシンタックスの定義ではありません]
 
   Document      ::= (Header?,Preamble?,Section*)
   Header        ::= (Title,(AuthorInfo,RevisionInfo?)?)
@@ -566,19 +565,18 @@ definition]:
   ListLabel     ::= (ListTerm+)
   ListItem      ::= (ItemText,(List|ListParagraph|ListContinuation)*)
 
-Where:
+TODO: Where:
 
-- '?' implies zero or one occurrence, '+' implies one or more
-  occurrences, '*' implies zero or more occurrences.
-- All block elements are separated by line boundaries.
-- `BlockId`, `AttributeEntry` and `AttributeList` block elements (not
-  shown) can occur almost anywhere.
-- There are a number of document type and backend specific
+- '?' は TODO: ゼロか一度の出現、 '+' は一度以上の出現、
+  '*' はゼロかそれ以上の出現を表す
+- すべてのブロック要素は TODO: line boundaries によって区切られる
+- ここにリストされていないブロック要素 `BlockId` 、 `AttributeEntry` と
+  `AttributeList` はほとんどどこにでも置くことができる
+- TODO: There are a number of document type and backend specific
   restrictions imposed on the block syntax.
-- The following elements cannot contain blank lines: Header, Title,
-  Paragraph, ItemText.
-- A ListParagraph is a Paragraph with its 'listelement' option set.
-- A ListContinuation is a <<X15,list continuation element>>.
+- 次の要素は空行を含むことができない： Header, Title, Paragraph, ItemText
+- TODO: A ListParagraph is a Paragraph with its 'listelement' option set.
+- ListContinuation は <<X15,list continuation element>> である
 
 [[X95]]
 Header
