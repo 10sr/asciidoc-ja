@@ -8,6 +8,7 @@ Stuart Rackham <srackham@gmail.com>
 :website: http://asciidoc.org/
 
 TODO: メタデータどうする？
+
 TODO: 訳注の書き方
 
 AsciiDoc は、TODO notes 、文書、記事、書籍、 ebook 、スライド、ウェブページ、
@@ -22,7 +23,7 @@ by the user.
 .この文書について
 **********************************************************************
 この文書はかなり巨大であり、チュートリアル、クイック・リファレンス、
-リファレンスの３つに整理されるべきでしょう。
+リファレンスの３つに整理する必要があります。
 
 もしあなたが AsciiDoc を初めて使おうと思ってこの文章を読んでいるなら、
 このセクションと <<X6,Getting Started>> セクションを読み、
@@ -40,21 +41,20 @@ asciidoc(1) DocBook output through your favorite DocBook toolchain or
 use the AsciiDoc a2x(1) toolchain wrapper to produce PDF, EPUB, DVI,
 LaTeX, PostScript, man page, HTML and text formats.
 
-The AsciiDoc format is a useful presentation format in its own right:
-AsciiDoc markup is simple, intuitive and as such is easily proofed and
-edited.
+AsciiDoc フォーマットそれ自体使いやすく見やすいフォーマットです。
+AsciiDoc のマークアップはシンプル・直感的で、容易に校正や編集ができます。
 
-AsciiDoc is light weight: it consists of a single Python script and a
-bunch of configuration files. Apart from asciidoc(1) and a Python
-interpreter, no other programs are required to convert AsciiDoc text
-files to DocBook or HTML. See <<X11,Example AsciiDoc Documents>>
-below.
+AsciiDoc は軽量であり、単一の Python スクリプトと TODO 設定ファイル群で
+構成されています。
+asciidoc(1) と Python インタプリタのみを用意すれば AsciiDoc ファイルから
+DocBook や HTML を生成することができます。
+以下の <<X11,Example AsciiDoc Documents>> を見てください。
 
-Text markup conventions tend to be a matter of (often strong) personal
-preference: if the default syntax is not to your liking you can define
-your own by editing the text based asciidoc(1) configuration files.
-You can also create configuration files to translate AsciiDoc
-documents to almost any SGML/XML markup.
+文書のマークアップのやり方は、個人の強い好みによることが多いです。
+もしデフォルトのシンタックスが好みに合わなければ、 asciidoc(1) 設定ファイルを
+書き換えることで自分の好きなシンタックスを定義できます。
+TODO: また、新たに設定ファイルを作成すれば、 AsciiDoc を大抵の SGML/XML マークアップに
+変換するようにすることもできます。
 
 asciidoc(1) comes with a set of configuration files to translate
 AsciiDoc articles, books and man pages to HTML or DocBook backend
