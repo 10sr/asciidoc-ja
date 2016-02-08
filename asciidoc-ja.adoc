@@ -581,8 +581,7 @@ TODO: Where:
 [[X95]]
 Header
 ~~~~~~
-The Header contains document meta-data, typically title plus optional
-authorship and revision information:
+ヘッダは、タイトルや著者、 TODO: バージョン情報などのメタデータを含むことができます。
 
 - The Header is optional, but if it is used it must start with a
   document <<X17,title>>.
