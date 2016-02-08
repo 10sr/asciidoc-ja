@@ -542,7 +542,7 @@ multi-part book.
 
 Block Elements
 ~~~~~~~~~~~~~~
-ブロック要素 (Block elements) は、一行以上のテキストやブロック要素を含む場合もあります。
+ブロック要素 (Block elements) は、一行以上のテキストやその他のブロック要素で構成されます。
 
 AsciiDoc のブロック構造は、おおよそ以下のようにまとめられます。
 footnote:[これは概要であり、厳格なシンタックスの定義ではありません]
@@ -582,21 +582,20 @@ Header
 ~~~~~~
 ヘッダは、タイトルや著者、 TODO: バージョン情報などのメタデータを含むことができます。
 
-- The Header is optional, but if it is used it must start with a
-  document <<X17,title>>.
-- Optional Author and Revision information immediately follows the
-  header title.
-- The document header must be separated from the remainder of the
-  document by one or more blank lines and cannot contain blank lines.
-- The header can include comments.
-- The header can include <<X18,attribute entries>>, typically
+- ヘッダは書かなくても構いませんが、書く場合文書の <<X17,title>>
+  ではじめる必要があります
+- 著者とバージョン情報を書く場合、それはタイトルの直後である必要があります
+- 文書のヘッダとそれ以外の部分の間には一つ以上の空行が必要であり、また
+  ヘッダには空行を含めることはできません
+- ヘッダにはコメントを含めることができます
+- ヘッダには次のような <<X18,attribute entries>> を含めることができます：
   'doctype', 'lang', 'encoding', 'icons', 'data-uri', 'toc',
   'numbered'.
-- Header attributes are overridden by command-line attributes.
-- If the header contains non-UTF-8 characters then the 'encoding' must
-  precede the header (either in the document or on the command-line).
+- ヘッダに記述された属性はコマンドライン引数によって上書きすることができます
+- TODO: ヘッダに UTF-8 でない文字を含む場合、 'encoding' はヘッダより前に置く必要が
+  あります（ドキュメント内またはコマンドライン引数）
 
-Here's an example AsciiDoc document header:
+AsciiDoc の文書のヘッダの例は以下のようになります：
 
   Writing Documentation using AsciiDoc
   ====================================
