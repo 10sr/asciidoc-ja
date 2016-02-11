@@ -628,18 +628,14 @@ Revision 情報は以下の書式のどちらかになります。
   これらの要素はすべて必須ではありません  
 +
 --
-  * If the revision number is specified it must be followed by a
-    comma.
-  * The revision number must contain at least one numeric character.
-  * Any non-numeric characters preceding the first numeric character
-    will be dropped.
-  * If a revision remark is specified it must be preceded by a colon.
-    The revision remark extends from the colon up to the next blank
-    line, attribute entry or comment and is subject to normal text
-    substitutions.
-  * If a revision number or remark has been set but the revision date
-    has not been set then the revision date is set to the value of the
-    'docdate' attribute.
+  * リビジョン番号が指定された場合末尾にコンマを付加する必要があります
+  * リビジョン番号のうち最低でも一文字は数字である必要があります
+  * はじめの数字より前にある数字以外の文字はすべて取り除かれます
+  * リビジョンに関する注釈が与えられた場合、それはコロンで始まる必要があります。
+    次に現れる空行・ TODO: attribute entry またはコメントまでが注釈として扱われます。
+    TODO: この注釈に対しては、通常のテキスト置換が行われます。
+  * リビジョン番号または注釈が存在し、リビジョンの日時が与えられてしない場合、
+    日時には 'docdate' 属性の値が用いられます
 
 Examples:
 
