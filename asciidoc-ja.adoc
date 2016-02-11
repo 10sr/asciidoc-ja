@@ -603,27 +603,26 @@ AsciiDoc の文書のヘッダの例は以下のようになります：
   v2.0, February 2003:
   Rewritten for version 2 release.
 
-The author information line contains the author's name optionally
-followed by the author's email address. The author's name is formatted
-like:
+著者の情報のあとには、 E メールアドレスを続けることができます。
+著者情報の書式は以下のようになります：
 
   firstname[ [middlename ]lastname][ <email>]]
 
-i.e. a first name followed by optional middle and last names followed
-by an email address in that order.  Multi-word first, middle and last
-names can be entered using the underscore as a word separator.  The
-email address comes last and must be enclosed in angle <> brackets.
-Here a some examples of author information lines:
+つまり、ファーストネーム・ミドルネーム・ラストネーム・ E メールアドレスの順序となります。
+ミドルネーム・ラストネーム・ E メールアドレスは必須ではありません。
+ファーストネーム・ミドルネーム・ラストネームが複数の単語からなる場合、アンダースコア
+で語を区切る事ができます。
+E メールアドレスは全体を <> でくくる必要があります。
+以下に著者情報の例を載せます：
 
   Joe Bloggs <jbloggs@mymail.com>
   Joe Bloggs
   Vincent Willem van_Gogh
 
-If the author line does not match the above specification then the
-entire author line is treated as the first name.
+著者情報の行が上記の書式に従っていない場合行全体がファーストネームと解釈されます。
 
-The optional revision information line follows the author information
-line. The revision information can be one of two formats:
+著者情報の行に続けて、リビジョン情報を追加することができます。
+リビジョン情報は以下の書式のどちらかになります。
 
 . An optional document revision number followed by an optional
   revision date followed by an optional revision remark:
