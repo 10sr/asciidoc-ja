@@ -638,7 +638,7 @@ Revision 情報は以下の書式のどちらかになります。
   * リビジョン番号または注釈が存在し、リビジョンの日時が与えられてしない場合、
     日時には 'docdate' 属性の値が用いられます
 
-Examples:
+例：
 
   v2.0, February 2003
   February 2003
@@ -649,17 +649,15 @@ Examples:
   :Rewritten for version 2 release.
 --
 
-. The revision information line can also be an RCS/CVS/SVN $Id$
-  marker:
+. リビジョン情報はまた、 RCS/CVS/SVN の $id$ キーワードを用いることもできます：
 +
 --
-  * AsciiDoc extracts the 'revnumber', 'revdate', and 'author'
-    attributes from the $Id$ revision marker and displays them in the
-    document header.
-  * If an $Id$ revision marker is used the header author line can be
-    omitted.
+  * AsciiDoc は、 'revnumber', 'revdate', 'author' の属性値を TODO: $Id$ revision marker
+    から取り出し、文書のヘッダに表示します
+  * もし TODO: $Id$ revision marker が用いられた場合ヘッダの著者の行は
+    省略できます
 
-Example:
+例：
 
   $Id: mydoc.txt,v 1.5 2009/05/17 17:58:44 jbloggs Exp $
 --
