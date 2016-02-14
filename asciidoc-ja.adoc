@@ -649,7 +649,7 @@ Revision 情報は以下の書式のどちらかになります。
   :Rewritten for version 2 release.
 --
 
-. リビジョン情報はまた、 RCS/CVS/SVN の $id$ キーワードを用いることもできます：
+. リビジョン情報はまた、 RCS/CVS/SVN の $Id$ キーワードを用いることもできます：
 +
 --
   * AsciiDoc は、 'revnumber', 'revdate', 'author' の属性値を TODO: $Id$ revision marker
