@@ -1,0 +1,6 @@
+asciidoc-ja
+===========
+
+WIP asciidoc.txt 日本語訳
+
+とりあえずテキストの書き方に関係ありそうな link:asciidoc-ja.adoc#8-document-structure[８章] から訳す。
